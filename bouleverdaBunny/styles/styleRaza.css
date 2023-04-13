@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(../Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../Poppins/Poppins-Regular.ttf);
+}
+*{
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(100px); /* Move the image to the left */
+    }
+    to {
+      opacity: 0.6;
+      transform: translateY(0px); /* Move the image back to its default position */
+    }
+  }
+  main img{
+    animation: 1s fadeIn;
+  }
+:root{
+    /*Brown COlors*/
+    --brown-Dark: #8C472E;
+    --brown-semi-Dark: #BF7449;
+    --white-brown: #F2CDAC;
+    --cream-color: #D99F6C;
+
+    /*Pink Colors*/
+    --pink-dark: #F2A7A7;
+    --pink-semi-dark: #F2C2C2;
+    --pink-light: #F2E0E0;
+    --pink-very-light: #F2F2F2;
+
+}
+/* Create a flex display for my website where every element */
+.flex {
+    font-family: 'Poppins-Medium';
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    /* insert margin static */
+    margin: 0 auto;
+}
+header{
+    font-family: 'Poppins-Medium';
+    background-color: rgb(250, 245, 245);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+}
+main{
+    font-family: 'Poppins-Medium';
+    color: rgb(14, 3, 3);
+    background-color: var(--pink-dark);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+}
+section{
+    font-family: 'Poppins-Medium';
+    background-color: var(--pink-light);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: justify;
+    align-content: justify;
+    width: 100%;
+}
+nav {
+    font-family: 'Poppins-Medium';
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+   
+    
+}
+ul, a{
+     /*REmove the default style of my navbar, underline and color*/
+     text-decoration: none;
+     list-style-type: none;
+     text-transform: none;
+     color: #000000;
+ 
+}
+/* Create a hover for my navbar using click and change color when I select a link */
+nav a:hover {
+    color: #FF0000;
+    
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+}
+.razas-title{
+    font-family: 'Poppins-Medium';
+    font-size: 1.4em;
+    color: black;
+    text-align: justify;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1em;
+}
+
+.description-comercial{
+    color: #F2CDAC;
+    background-color: var(--pink-dark);
+    font-family: 'Poppins-Regular';
+    font-size: auto;
+    color: var(--brown-light);
+    text-align: justify;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1em;  
+    
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.description-comercial ul{
+    order: 1;
+    font-family: 'Poppins-Regular';
+    font-size: auto;
+    color: var(--brown-light);
+    text-align: justify;
+    margin: 0 auto;
+    width: 50%;
+    padding: 1.2em;    
+    
+    text-decoration: default;
+    list-style-type: disc;
+    text-transform: none;
+    color: #000000;
+}
+.description-comercial img{
+    order: 2;
+    width: 40%;
+}
+
+article{
+    font-family: 'Poppins-Medium';
+    background-color: var(--pink-light);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+#razaT{
+    font-size: 30px;
+    color: white;
+} 
+.california{
+    background-color: var(--brown-semi-Dark);
+}
+.holandes{
+    background-color: var(--brown-semi-Dark);
+}
+#infoMas{
+   
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 12%;
+
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    
+    width: 10%;
+    height: 18%;
+    background-color: var(--pink-dark);
+}
+.active{
+    background-color: var(--pink-dark);
+}
+
+nav a.active {
+    background-color: var(--pink-dark);
+    transition: background-color 0.5s ease;
+  }
+  footer{
+    background-color: #8C472E;
+    text-align: center;
+    font-family: 'Poppins-Medium';
+    background-color: var(--pink-dark);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    height: 100%;
+  }
